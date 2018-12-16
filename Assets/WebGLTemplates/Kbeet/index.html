@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">	
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="TemplateData/gamestyle.css">
+    <title>Unity WebGL Player | %UNITY_WEB_NAME%</title>
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%");
+	document.addEventListener("mousedown", function(e) {
+		if (e.button === 1) e.preventDefault();
+	});
+    </script>
+  </head>
+  
+  <body>
+
+	<div id = "centermenu">
+		<div class="navbar">
+		<img class = "beet" src= "TemplateData/logo.png" alt="logo" height = "300" width = "300">
+			<a class ="home" style = "margin-left:80px;" href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Games  </button>
+				<div class="dropdown-content">
+					<a  class= "menub" href="../SpaceShooter/game1.html">Space Shooter</a>
+					<a class= "menub" href="../RPGMaker/game2.html">Pen and Paper RPG Helper</a>
+					<a class= "menub" href="../PnPHelperv2/index.html">Pen and Paper RPG Helper v2</a>
+				</div>
+			</div> 
+			<div class= "name" > K-Beet Games </div>
+		</div>
+		
+</div>
+  <body>
+    <div class="webgl-content" style="width: %UNITY_WIDTH%px;height: calc(  %UNITY_HEIGHT%px + 100px)">
+      <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px; position:fixed"></div>  
+    </div>
+	 <div class="footer" style="margin-top:100px;width: %UNITY_WIDTH%px; ">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      </div>
+  </body>
+  
+</html>

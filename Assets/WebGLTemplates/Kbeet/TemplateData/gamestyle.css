@@ -1,0 +1,161 @@
+body {
+	background-color :black;
+}
+
+#centermenu {
+	padding-top:40px;
+	background-image: url("menubg.png");
+	width: 100%;
+	height: 160px;
+
+	
+}
+
+
+
+.navbar {	
+	transform: rotate(-2deg);
+    overflow: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+	background-image: url("menu.png");
+	width:114px;
+	height:60px;
+	margin-left:20px;
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.menub {
+	background-image: url("menu2.png");
+	width:300x;
+	height:56px;
+	margin-bottom:10px;
+	margin-left:20px;
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+	
+	margin-left:20px;
+	
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	background-image: url("menu.png");
+	 background-repeat: no-repeat;
+	 margin-right:80px;
+	width:150px;
+	height:100px;
+    font-size: 30px;    
+    border: none;
+    outline: none;
+    color: white;
+
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    
+}
+
+
+
+.dropdown-content {
+    display: none;
+    background-color: #transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 22px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-image: url("menu3.png");
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.home:hover {
+	 background-image: url("menu4.png");
+}
+
+.dropbtn:hover {
+	 background-image: url("menu4.png");
+}
+
+h1 {
+	margin-left:16px;
+}
+img {
+	
+	height: 0px;
+	width: 0px;
+	
+	}
+	
+.beet {
+	margin-left:30px;
+	float:left;
+
+
+	height: 120px;
+	width: 120px;
+
+}	
+
+.name {
+	margin-left:600px;
+	position: absolute;
+	font-size: 50px;
+	color:white;
+}
+	
+#gameContainer {
+
+	display: block;
+	padding-top :50px;
+	color: white;
+}
+
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content {top: 50%; left: 50%; margin-top:50px; -webkit-transform: translate(200px, 200px); transform: translate(200px, 200px);}
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
+
+.footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;transform: translateX(200px);} 
+.footer .webgl-logo, .title, .fullscreen {height: 100%; display: block; background: transparent center no-repeat;} 
+.footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
+.footer .title {margin-right: 10px; float: right;}
+.footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
